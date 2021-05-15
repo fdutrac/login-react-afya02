@@ -1,9 +1,13 @@
 import styled from 'styled-components';
 
-export const CardContent = styled.div`
-    border-radius: 22px;
-    background: #e2e2e2;
-    padding: 22px;
+export const FormSignInContent = styled.div`
+    width:400px;
+    min-height: 550px;
+    background: #e2e2ee;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 
     & form {
         display: grid;
@@ -12,9 +16,11 @@ export const CardContent = styled.div`
             width:100%;
             height: 18px;
             margin: 5px 0;
-
+            border:0;
+            padding: 8px;
+            &:focus {
+                outline-color: red;
         }
-        & input:focus {
             
         }
         & button {
@@ -34,5 +40,4 @@ export const CardContent = styled.div`
         }
         
     }
-
 `

@@ -1,4 +1,4 @@
-import FormSignIn from '../../../components/Form'
+import FormSignUp from '../../../components/FormSignUp'
 import Nav from '../../../components/Nav';
 import Footer from '../../../components/Footer';
 
@@ -15,7 +15,7 @@ const Home: React.FC = () => {
                 textos
               </div>
               <div className="signup-form">
-                <FormSignIn />
+                <FormSignUp />
               </div>
             </section>
             <section className="cta-section">
