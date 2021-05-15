@@ -9,6 +9,7 @@ export const NavContent = styled.nav`
     align-items: center;
     border-bottom: 1px solid lightgray;
     box-shadow: 3px 2px 10px lightgray;
+    background: white;
 
     & img {
         width: 170px;

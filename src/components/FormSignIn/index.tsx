@@ -23,8 +23,11 @@ const FormSignIn: React.FC = () => {
 
       api.post('login', formDataContent).then(
         response => {
-          toast.success('Login realizado com sucesso!');
-          history.push('/panel');
+          localStorage.setItem('@tokenAfyaApp', response.data.token)
+          toast.success('Login realizado com sucesso!', 
+          {
+            onClose: () => history.push('/panel')
+          });
         }
       ).catch(err => toast.error('Opsss, algo deu errado x.x')).finally(() => setIsLoad(false))
     }, [formDataContent, history])

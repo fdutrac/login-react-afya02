@@ -6,6 +6,9 @@ export default createGlobalStyle`
         margin: 0;
         font-family: 'Roboto', sans-serif;
     }
+    body{
+        background: #F70054;
+    }
     footer {
         text-align: center;
         padding: 22px;
